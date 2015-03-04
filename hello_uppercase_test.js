@@ -1,4 +1,4 @@
- QUnit.test( "hello_uppercase", function( assert ) {
-var value = "hello_uppercase";
-assert.equal( value, "hello", "hello_uppercase" );
+QUnit.test( "HELLO SAKHI", function( assert ) {
+	var value = "hello_uppercase";
+	assert.equal( hello_uppercase("sakhi"), "Hello, SAKHI" );
 });

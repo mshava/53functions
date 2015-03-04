@@ -1,4 +1,4 @@
-function hello_uppercase (argument) {
-return 'hello';
-	}
-hello_uppercase();
+function hello_uppercase (name) {
+	return 'Hello, ' +  name.toUpperCase()	;
+}
+//hello_uppercase("sakhi");
