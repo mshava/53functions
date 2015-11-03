@@ -1,5 +1,5 @@
-QUnit.test("testing reverse string",function (assert){
+QUnit.test("testing reverse str function", function (assert){
 
-	assert.equal(split("codex academy"),"ymedaca xedoc","we are expecting ymedaca xedoc");
+	assert.equal(reverse("codeX"),"Xedoc","we are expecting Xedoc");
 
 });
