@@ -1,4 +1,4 @@
-var high_low = function (numList){
+  function high_low(numList){
 
 	var calculate = {
 
@@ -18,17 +18,15 @@ var high_low = function (numList){
 
 				}else {
 
-					return NaN;
-
-			} else {
-
 					var val = values.pop();
 
 					return Math.min(val, this.min(val));
+				}
+
 			}
 		},
-
-		max: function (values){
+			
+		max: function(values) {
 
 			if (values.length == 0){
 
@@ -42,20 +40,19 @@ var high_low = function (numList){
 
 					return val;
 
-				}else{
-
-					return NaN;
-
-				}else{
+				}else {
 
 						var val = values.pop();
 
 						return Math.max(val, this.max(val)); 
 				}
+
 			}
 
+
+		  return [calculate.min([100,13,3,6]),calculate.max([100,13,3,6])];
+
 		}
-
-		return [calculate.min([13,49,3,18,4,5,99,6,107,8,11,15]),calculate.max([13,49,3,18,4,5,99,6,107,8,11,15])];
-
-	};
+		
+	}	
+}
