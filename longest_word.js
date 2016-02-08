@@ -1,32 +1,27 @@
-var longest_word = function(sentence){
-	var words = sentence.split(" ");
-	var longer_word = words[0];
-	for(var i = 0; i < words.length; i++){
-		if(words[0].length < words[i].length){
-			words[0] = words[i].length;
-			longer_word = words[i];
+var longest_word = function(str){
+	var splitStr = str.split(" ");
+	var word = splitStr[0];
+		for(var x = 0;x < splitStr.length;x ++){
+			if(splitStr[x]!==null){
+				if(word.length < splitStr[x].length){
+					word = splitStr[x];
+			}
 		}
-	};
-	return (longer_word + ''+longer_word.length);
+	}
+	return word+" : "+word.length;
 }
 
-
-var longest_word = function(sentence){
-
-	var words = sentence.split(" ");
-
-	var long_word = words[0];
-
-	for(var i = 0; i < word.length; i ++){
-
-		if(words[0].length[i].length){
-
-			words[0] = words[i].length;
-
-			long_word = words[i];
-		}
-
-	};
-		return (long_word + " " + long_word.length);
-
+/*
+var longest_word = function(str){
+	var word = " ";
+	var splitStr = word.split(" ");
+		for(var i = 0; i < splitStr.length; i++){
+			if(splitStr[i]!== null){
+				if(word.length < splitStr[i+=1].length){
+					word = splitStr[i];
+				}
+			}
+		}	
+	return word+" : "+word.length;	
 }
+*/

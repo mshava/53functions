@@ -1,22 +1,20 @@
+var reverse = function(word){
+var newString = "";
+var s = word.length;
+	while(s > 0){
+		newString+=word.substring(s-1, s);
+	s--;
+	}
+return newString;
+}
 /*
-var reverse = function(codex academy){
-
-	var str = '';
-
-		for(var i = codex academy.length -1 ; i >= 0 ; i--)	
-
-			str += codex academy[i];
-
-	return str;
-
+function Reverse(word){
+var newString = "";
+var x = word.length;
+while(x > 0){
+newString += word.substring(x-1, x);
+x--;
 }
-
-String.prototype.reverse = function (){
-	var reverse = String.prototype;
-	return reverse;
-};
+return newString;
+}
 */
-
-var reverse = function(codeX) {
-  return codeX.split('').reverse().join('');
-}

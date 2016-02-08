@@ -1,7 +1,7 @@
-QUnit.test("testing the longest word's lenght",function (assert){
+QUnit.test("testing the longest word lenght function",function (assert){
 
-	var results = sentence("CodeX_Academy is cool");
+	var str = "I contain six variable sized words";
 
-	assert.equal(long_word("CodeX_Academy"), 13);
+	assert.equal(longest_word(str),"variable : 8", "we expecting variable with 8 letters");
 
 });
